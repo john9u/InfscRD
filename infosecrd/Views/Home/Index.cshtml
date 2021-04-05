@@ -1,0 +1,29 @@
+﻿ @model List<infosecrd.Models.tblArticle>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container">
+    <div class="row product-list dev">
+        <div class="col-sm-6 col-md-4 product-item animation-element slide-top-left">
+            @Html.Partial("_blockpresentation",Model[0])
+        </div>
+        <div class="col-sm-6 col-md-4 product-item animation-element slide-rotate-clockwise">
+            @Html.Partial("_blockpresentation",Model[1])
+        </div>
+        <div class="col-sm-6 col-md-4 product-item animation-element slide-top-right">
+            @Html.Partial("_blockpresentation",Model[2])
+        </div>
+        <div class="col-sm-6 col-md-4 product-item animation-element slide-fade-slow">
+            @Html.Partial("_blockpresentation",Model[3])
+        </div>
+        <div class="col-sm-6 col-md-4 product-item animation-element slide-fade">
+            @Html.Partial("_blockpresentation",Model[4])
+        </div>
+        <div class="col-sm-6 col-md-4 product-item animation-element slide-fade-xslow">
+            @Html.Partial("_blockpresentation",Model[5])
+        </div>
+    </div>
+</div>
+<div class="container text-center"><button class="btn btn-dark btn-block btn-lg" type="button">Ver mas</button></div>
+
